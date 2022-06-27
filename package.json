@@ -6,8 +6,8 @@
     "build:vue": "mix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint": "eslint \"./assets/js/**\"",
-    "lint:fix": "eslint \"./assets/js/**\" --fix"
+    "lint": "eslint \"./src/**\"",
+    "lint:fix": "eslint \"./src/**\" --fix"
   },
   "dependencies": {
     "chart.js": "^2.9.4",

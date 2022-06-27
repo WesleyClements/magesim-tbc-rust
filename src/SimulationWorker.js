@@ -1,6 +1,6 @@
 class SimulationWorker {
   constructor(onSuccess, onError) {
-    this.worker = new Worker(`./dist/js/sim_worker.js?${Math.random()}`);
+    this.worker = new Worker(`./dist/js/sim.worker.js?${Math.random()}`);
 
     this.worker.onerror = (...args) => {
       onError(...args);
