@@ -1,11 +1,11 @@
-let mix = require("laravel-mix");
+const mix = require('laravel-mix');
 
 mix.options({
-    processCssUrls: false
+  processCssUrls: false,
 });
 
-mix.js("assets/js/app.js", "js")
-    .js("assets/js/sim_worker.js", "js")
-    .sass("assets/sass/app.scss", "css")
-    .setPublicPath("dist")
-    .vue();
+mix.js('assets/js/app.js', 'js')
+  .js('assets/js/sim_worker.js', 'js')
+  .sass('assets/sass/app.scss', 'css')
+  .setPublicPath('dist')
+  .vue({ version: 2 });
