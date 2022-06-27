@@ -8,7 +8,7 @@ window._ = require('lodash');
 
 require('./app.helpers');
 
-const components = require.context('./components/', true, /\.vue$/i);
+const components = require.context('./common/components/', true, /\.vue$/i);
 components.keys().map((key) => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
 const AppConstructor = Vue.extend(App);
 
